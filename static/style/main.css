@@ -56,6 +56,7 @@ body {
 
 .logo h3 span:nth-child(2) {
   color: var(--silver);
+  font-family: "Comic Sans MS", sans-serif;
 }
 
 .UV-index_header_navBar {
@@ -263,10 +264,14 @@ body {
 
 .UV-index_offers .offersSection div {
   flex: 0 0 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-content: center;
+  align-items: center;
   height: 300px;
   background: var(--fake-blue);
   padding: 2rem;
-  border-radius: 1rem;
 }
 
 .UV-index_offers .offersSection div svg {
@@ -328,6 +333,114 @@ body {
 }
 
 .UV-index_testimonials .testimonialsSection ul li:nth-child(3) {
+  color: var(--silver);
+}
+
+.UV-index_joinTheUniverseOfLuxury {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  place-content: center;
+  gap: 2rem;
+  background: var(--fake-blue);
+  padding: 2rem;
+}
+
+.UV-index_joinTheUniverseOfLuxury h3 {
+  color: var(--white);
+  font-size: 23px;
+}
+
+.UV-index_joinTheUniverseOfLuxury p {
+  color: var(--silver);
+  text-align: center;
+}
+
+.UV-index_joinTheUniverseOfLuxury a {
+  display: block;
+  background: var(--white);
+  padding: 1rem;
+  color: var(--purple);
+  width: 100%;
+  text-align: center;
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+
+.footer {
+  margin-top: 3rem;
+  color: var(--white);
+}
+
+.footer .logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.footer_flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  place-content: center;
+  gap: 2.5rem;
+}
+
+.footer_flex ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer_flex ul li:nth-child(1) {
+  font-family: "Arial", sans-serif;
+}
+
+.footer_flex ul li:nth-child(2) a,
+.footer_flex ul li:nth-child(3) a,
+.footer_flex ul li:nth-child(4) a,
+.footer_flex ul li:nth-child(5) a {
+  display: block;
+  color: var(--silver);
+}
+
+.footer_flex ul:last-child li {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  align-items: center;
+  flex-direction: row;
+}
+
+.footer section:nth-child(2) {
+  background: var(--fake-blue);
+  margin-top: 2.5rem;
+  padding: 1rem;
+}
+
+.footer section:nth-child(2) ul {
+  display: flex;
+  align-items: center;
+  place-content: center;
+  justify-content: space-between;
+}
+
+.footer section:nth-child(2) ul li:nth-child(2) {
+  font-family: "Academy Engraved LET", sans-serif;
+}
+
+.footer section:nth-child(2) ul li:nth-child(1) span:first-child,
+.footer section:nth-child(2) ul li:nth-child(3) span:first-child {
+  color: var(--gold);
+}
+
+.footer section:nth-child(2) ul li:nth-child(1) span:last-child,
+.footer section:nth-child(2) ul li:nth-child(3) span:last-child {
   color: var(--silver);
 }
 
