@@ -1,80 +1,345 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      name="viewport"
+    />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
     <title>UV - LandingPage</title>
-    <link rel="stylesheet" href="static/style/main.css">
-</head>
-<body class="UV_index">
-
-<header class="UV_header wrapper">
-
-
-        <div class="logo"><h3><span>Uniq</span><span>Verse</span></h3></div>
-
-        <nav class="UV_header_navBar">
-
-            <svg class="UV_header_navBar_hamburger" width="25" height="28" viewBox="0 0 25 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M23.4375 3.95979H1.5625C1.1481 3.95979 0.750671 3.75408 0.457646 3.38792C0.16462 3.02175 0 2.52513 0 2.00729C0 1.48946 0.16462 0.992833 0.457646 0.626668C0.750671 0.260503 1.1481 0.0547943 1.5625 0.0547943H23.4375C23.8519 0.0547943 24.2493 0.260503 24.5424 0.626668C24.8354 0.992833 25 1.48946 25 2.00729C25 2.52513 24.8354 3.02175 24.5424 3.38792C24.2493 3.75408 23.8519 3.95979 23.4375 3.95979ZM7.8125 27.3898H1.5625C1.1481 27.3898 0.750671 27.1841 0.457646 26.8179C0.16462 26.4518 0 25.9551 0 25.4373C0 24.9195 0.16462 24.4228 0.457646 24.0567C0.750671 23.6905 1.1481 23.4848 1.5625 23.4848H7.8125C8.2269 23.4848 8.62433 23.6905 8.91735 24.0567C9.21038 24.4228 9.375 24.9195 9.375 25.4373C9.375 25.9551 9.21038 26.4518 8.91735 26.8179C8.62433 27.1841 8.2269 27.3898 7.8125 27.3898ZM15.625 15.6748H1.5625C1.1481 15.6748 0.750671 15.4691 0.457646 15.1029C0.16462 14.7368 0 14.2401 0 13.7223C0 13.2045 0.16462 12.7078 0.457646 12.3417C0.750671 11.9755 1.1481 11.7698 1.5625 11.7698H15.625C16.0394 11.7698 16.4368 11.9755 16.7299 12.3417C17.0229 12.7078 17.1875 13.2045 17.1875 13.7223C17.1875 14.2401 17.0229 14.7368 16.7299 15.1029C16.4368 15.4691 16.0394 15.6748 15.625 15.6748Z" fill="#C0C0C0"/>
-            </svg>
-
-            <div class="UV_header_navBar_menu">
-
-                <ul>
-                    <li><a href="#">ENTERTAINMENT</a></li>
-                    <li><a href="#">SHOP</a></li>
-                    <li><a href="#">FOOD</a></li>
-                    <li><a href="#">SERVICE</a></li>
-<!--                    <li><a href="#">LOGIN</a></li>-->
-<!--                    <li><a href="#">GET STARTED</a></li>-->
-                </ul>
-
-                <div class="header_btn">
-                    <button>LOGIN</button>
-                    <button>GET STARTED</button>
-                </div>
-
-            </div>
-
-        </nav>
-
-</header>
-
-<main class="wrapper">
-
-    <section class="UV_intro">
-
-        <div class="right">
-            <h2 class="o_p_i_p">
-                <span>One Platform.</span>
-                <span>Infinite <br> Possibilities.</span>
-            </h2>
+    <link href="static/style/main.css" rel="stylesheet" />
+  </head>
+  <body class="UV-index">
+    <header class="UV-index_header">
+      <section class="wrapper">
+        <div class="logo">
+          <img alt="logo" src="img/infiniteSymbol2.png" />
+          <h3><span>Uniq</span><span>Verse</span></h3>
         </div>
-        
-        <div class="left">
 
-            <h3>
-                YOUR UNIVERSE OF LUXURY EXPERIENCE
-            </h3>
+        <nav class="UV-index_header_navBar">
+          <svg
+            class="UV_header_navBar_hamburger"
+            fill="none"
+            height="28"
+            viewBox="0 0 25 28"
+            width="25"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M23.4375 3.95979H1.5625C1.1481 3.95979 0.750671 3.75408 0.457646 3.38792C0.16462 3.02175 0 2.52513 0 2.00729C0 1.48946 0.16462 0.992833 0.457646 0.626668C0.750671 0.260503 1.1481 0.0547943 1.5625 0.0547943H23.4375C23.8519 0.0547943 24.2493 0.260503 24.5424 0.626668C24.8354 0.992833 25 1.48946 25 2.00729C25 2.52513 24.8354 3.02175 24.5424 3.38792C24.2493 3.75408 23.8519 3.95979 23.4375 3.95979ZM7.8125 27.3898H1.5625C1.1481 27.3898 0.750671 27.1841 0.457646 26.8179C0.16462 26.4518 0 25.9551 0 25.4373C0 24.9195 0.16462 24.4228 0.457646 24.0567C0.750671 23.6905 1.1481 23.4848 1.5625 23.4848H7.8125C8.2269 23.4848 8.62433 23.6905 8.91735 24.0567C9.21038 24.4228 9.375 24.9195 9.375 25.4373C9.375 25.9551 9.21038 26.4518 8.91735 26.8179C8.62433 27.1841 8.2269 27.3898 7.8125 27.3898ZM15.625 15.6748H1.5625C1.1481 15.6748 0.750671 15.4691 0.457646 15.1029C0.16462 14.7368 0 14.2401 0 13.7223C0 13.2045 0.16462 12.7078 0.457646 12.3417C0.750671 11.9755 1.1481 11.7698 1.5625 11.7698H15.625C16.0394 11.7698 16.4368 11.9755 16.7299 12.3417C17.0229 12.7078 17.1875 13.2045 17.1875 13.7223C17.1875 14.2401 17.0229 14.7368 16.7299 15.1029C16.4368 15.4691 16.0394 15.6748 15.625 15.6748Z"
+              fill="#C0C0C0"
+            />
+          </svg>
 
-            <p>
-                One app for all your premium lifestyle needs. Shop, watch, experience, and indulge in luxury.
-            </p>
-
+          <div class="UV-index_header_navBar_menu">
             <ul>
-                <li><a href="#">Join Now</a></li>
-                <li><a href="#">Learn More</a></li>
+              <li><a href="#">ENTERTAINMENT</a></li>
+              <li><a href="#">SHOP</a></li>
+              <li><a href="#">FOOD</a></li>
+              <li><a href="#">SERVICE</a></li>
+              <!--                    <li><a href="#">LOGIN</a></li>-->
+              <!--                    <li><a href="#">GET STARTED</a></li>-->
             </ul>
 
+            <div class="header_btn">
+              <button>LOGIN</button>
+              <button>GET STARTED</button>
+            </div>
+
+            <img alt="logo" src="img/infiniteSymbol2.png" />
+          </div>
+        </nav>
+      </section>
+    </header>
+
+    <main class="wrapper">
+      <section class="UV-index_intro">
+        <div class="right">
+          <h2 class="o_p_i_p">
+            <span>One Platform.</span>
+            <span
+              >Infinite <br />
+              Possibilities.</span
+            >
+          </h2>
         </div>
 
-    </section>
+        <div class="left">
+          <h3>YOUR UNIVERSE OF LUXURY EXPERIENCE</h3>
 
-</main>
+          <p>
+            One app for all your premium lifestyle needs. Shop, watch,
+            experience, and indulge in luxury.
+          </p>
 
+          <ul>
+            <li><a href="#">Join Now</a></li>
+            <li><a href="#">Learn More</a></li>
+          </ul>
+        </div>
+      </section>
 
-</body>
+      <section class="UV-index_offers">
+        <h2>What We Offer</h2>
+
+        <div class="offersSection">
+          <div>
+            <svg
+              fill="none"
+              height="50"
+              viewBox="0 0 40 40"
+              width="50"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_34_177)">
+                <path
+                  d="M4 5V27.5H36V5H4ZM0 5C0 2.24219 1.79375 0 4 0H36C38.2062 0 40 2.24219 40 5V27.5C40 30.2578 38.2062 32.5 36 32.5H4C1.79375 32.5 0 30.2578 0 27.5V5ZM8 35H32C33.1063 35 34 36.1172 34 37.5C34 38.8828 33.1063 40 32 40H8C6.89375 40 6 38.8828 6 37.5C6 36.1172 6.89375 35 8 35Z"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_34_177">
+                  <rect fill="white" height="40" width="40" />
+                </clipPath>
+              </defs>
+            </svg>
+
+            <h3>Premium Entertainment</h3>
+            <p>
+              Watch movies, shows, and live events anytime. Enjoy smooth
+              streaming with top-quality content made for your vibe.
+            </p>
+          </div>
+
+          <div>
+            <svg
+              fill="none"
+              height="40"
+              viewBox="0 0 40 40"
+              width="40"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_34_188)">
+                <path
+                  d="M14.2857 8.75C14.2857 5.99219 16.8482 3.75 20 3.75C23.1518 3.75 25.7143 5.99219 25.7143 8.75V12.5H14.2857V8.75ZM10 12.5H4.28571C1.91964 12.5 0 14.1797 0 16.25V32.5C0 36.6406 3.83929 40 8.57143 40H31.4286C36.1607 40 40 36.6406 40 32.5V16.25C40 14.1797 38.0804 12.5 35.7143 12.5H30V8.75C30 3.91406 25.5268 0 20 0C14.4732 0 10 3.91406 10 8.75V12.5ZM12.1429 16.25C12.7112 16.25 13.2562 16.4475 13.6581 16.7992C14.0599 17.1508 14.2857 17.6277 14.2857 18.125C14.2857 18.6223 14.0599 19.0992 13.6581 19.4508C13.2562 19.8025 12.7112 20 12.1429 20C11.5745 20 11.0295 19.8025 10.6276 19.4508C10.2258 19.0992 10 18.6223 10 18.125C10 17.6277 10.2258 17.1508 10.6276 16.7992C11.0295 16.4475 11.5745 16.25 12.1429 16.25ZM25.7143 18.125C25.7143 17.6277 25.9401 17.1508 26.3419 16.7992C26.7438 16.4475 27.2888 16.25 27.8571 16.25C28.4255 16.25 28.9705 16.4475 29.3724 16.7992C29.7742 17.1508 30 17.6277 30 18.125C30 18.6223 29.7742 19.0992 29.3724 19.4508C28.9705 19.8025 28.4255 20 27.8571 20C27.2888 20 26.7438 19.8025 26.3419 19.4508C25.9401 19.0992 25.7143 18.6223 25.7143 18.125Z"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_34_188">
+                  <rect fill="white" height="40" width="40" />
+                </clipPath>
+              </defs>
+            </svg>
+            <h3>Luxury Shopping</h3>
+            <p>
+              Find luxury fashion, gadgets, and daily essentials. Shop trusted
+              brands in one clean, easy-to-use space.
+            </p>
+          </div>
+
+          <div>
+            <svg
+              fill="none"
+              height="40"
+              viewBox="0 0 40 40"
+              width="40"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.875 5C15.8359 5 15 5.83594 15 6.875C15 7.91406 15.8359 8.75 16.875 8.75H18.125V11.3516C9.34375 12.2812 2.5 19.7188 2.5 28.75H37.5C37.5 19.7188 30.6562 12.2812 21.875 11.3516V8.75H23.125C24.1641 8.75 25 7.91406 25 6.875C25 5.83594 24.1641 5 23.125 5H20H16.875ZM1.875 31.25C0.835938 31.25 0 32.0859 0 33.125C0 34.1641 0.835938 35 1.875 35H38.125C39.1641 35 40 34.1641 40 33.125C40 32.0859 39.1641 31.25 38.125 31.25H1.875Z"
+              />
+            </svg>
+            <h3>Food and Drinks Service</h3>
+            <p>
+              Order from the best restaurants, cafes, and gourmet spots. Fast
+              delivery. Premium taste. Always fresh.
+            </p>
+          </div>
+
+          <div>
+            <svg
+              height="50"
+              version="1.1"
+              viewBox="0 0 128 128"
+              width="50"
+              x="0"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              y="0"
+            >
+              <g>
+                <ellipse
+                  cx="90.866"
+                  cy="111.455"
+                  fill="#C0C0C0"
+                  rx="2.066"
+                  ry="2.109"
+                ></ellipse>
+                <path
+                  d="M127.325 58.262 109.4 42.395V14.436a2 2 0 0 0-4 0v24.418L93.383 28.218V16.437h2.133a2 2 0 0 0 0-4h-4.133a2 2 0 0 0-2 2v10.24l-22.144-19.6c-1.625-1.44-4.17-1.435-5.792.012L.668 59.344a2 2 0 0 0 2.664 2.984l11.134-9.94v60.122a2 2 0 0 0 4 0V48.818L64.112 8.072c.107-.095.368-.095.475 0l44.976 39.81c-.014.098-.03.198-.03.3v64.328a2 2 0 0 0 4 0V51.396l11.142 9.862a2 2 0 0 0 2.65-2.996z"
+                  fill="#C0C0C0"
+                ></path>
+                <ellipse
+                  cx="101.199"
+                  cy="14.436"
+                  fill="#C0C0C0"
+                  rx="2.067"
+                  ry="2.109"
+                ></ellipse>
+                <path
+                  d="M66.59 33.526c-24.182 0-43.857 20.294-43.857 45.239 0 24.942 19.675 45.235 43.858 45.235.642 0 1.28-.018 1.916-.045a1.998 1.998 0 0 0 1.902-2.208c-.241-2.28-.861-4.531-1.796-6.51-.988-2.088-2.683-4.124-5.04-6.052a1.964 1.964 0 0 0-1.389-.449c-2.043.123-4.136.05-6.186-.215-5.292-.687-6.97-1.775-7.446-2.567-.37-.617.007-1.333.32-1.883.507-.887 1.202-2.104.84-3.505-.036-.142-.351-1.289-1.199-2.027a.399.399 0 0 1 .025-.037c.457-.527.677-1.19.62-1.879-.102-1.26-1.105-2.1-1.41-2.328a.395.395 0 0 1-.025-.019 1.99 1.99 0 0 1 .1-.118c1.244-.977 2.175-2.913 1.639-4.613-.345-1.093-1.014-1.961-1.796-2.776-.288-.3-.536-.557-.756-.874.052-.024.113-.05.186-.076a19.777 19.777 0 0 0 3.64-1.745c5.386-3.327 5.714-8.805 6.004-13.638.092-1.551.18-3.03.414-4.433 1.42 8.74 6.092 16.938 13.696 23.941 1.21 1.116 2.542 2.13 3.828 3.112 2.592 1.977 5.04 3.844 6.497 6.409l.073.125c.15.255.504.85.754 1.544.285.795 1.105 1.324 1.95 1.324a2 2 0 0 0 1.978-1.708c.184-1.251.293-2.638-.166-4.296-1.336-4.866-5.215-8.68-8.382-11.795-8.596-8.452-9.683-17.46-9.666-21.577 2.6 3.294 6.653 5.473 10.163 7.35.89.477 1.752.937 2.548 1.396 7.08 4.08 14.403 8.297 14.17 17.23-.11 4.13-2.28 8.351-3.566 10.5a2 2 0 0 0 3.434 2.052c1.485-2.484 3.997-7.404 4.13-12.447.297-11.314-8.835-16.575-16.172-20.802-.83-.477-1.729-.959-2.657-1.456-4.18-2.235-9.923-5.699-10.705-9.15-.222-.984.057-1.744.584-2.562 1.042-1.613 2.335-2.746 3.291-3.437 2.598-1.637 5.147-2.4 8.017-2.4 2.754 0 5.507.73 7.936 1.375 3.448.915 8.067 3.982 13.005 8.637a2 2 0 0 0 3.137-2.397c-7.723-14.461-22.453-23.445-38.44-23.445zm23.324 13.34c-2.665-.709-5.686-1.51-8.96-1.51-3.63 0-6.97.998-10.209 3.052a1.55 1.55 0 0 0-.094.065c-2.359 1.691-6.362 5.467-6.756 11.798-.215 1.49-1.761 15.004 10.732 27.289.598.587 1.21 1.191 1.818 1.812-1.026-.787-1.999-1.553-2.885-2.37-8.291-7.636-12.617-16.36-12.857-25.923-.018-.718.018-2.386.272-3.563a2 2 0 0 0-3.377-1.829c-1.138 1.15-2.247 3.292-2.561 3.922a20.237 20.237 0 0 0-1.645 4.767c-.412 1.93-.53 3.907-.645 5.82-.265 4.421-.494 8.24-4.11 10.474-.88.542-1.857 1.01-2.902 1.388-1.831.662-2.529 1.782-2.792 2.604-.252.791-.338 2.043.688 3.523.395.569.814 1.005 1.15 1.355.45.468.678.716.821 1.08-.043.131-.162.323-.244.388a2.026 2.026 0 0 0-.189.152c-.304.277-1.81 1.758-1.594 3.69.059.53.3 1.432 1.197 2.226-.27.605-.48 1.395-.34 2.252.14.84.596 1.584 1.306 2.131-.092.195-.24.453-.34.629-.207.362-.42.737-.574 1.145-.818 2.18-.289 3.803.299 4.782 1.807 3.006 6.486 3.97 10.36 4.473 2.032.263 4.104.36 6.134.28 1.573 1.381 2.735 2.816 3.38 4.178a15.82 15.82 0 0 1 1.062 3.05c-21.734-.295-39.326-18.678-39.326-41.231 0-22.74 17.88-41.239 39.858-41.239 10.005 0 19.473 3.888 26.691 10.616-1.128-.543-2.258-.983-3.368-1.277z"
+                  fill="#C0C0C0"
+                ></path>
+              </g>
+            </svg>
+
+            <h3>Home & Salon Services</h3>
+            <p>
+              Book pros for hair, nails, or massage at home. Quality services,
+              fast bookings—right to your door.
+            </p>
+          </div>
+
+          <div>
+            <svg
+              height="64"
+              version="1.1"
+              viewBox="0 0 64 64"
+              width="64"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g>
+                <path
+                  d="M21 37h-2v10h6v-2h-4zM35 41.877 34.219 45h-.438L33 41.877V37h-2v5l1.219 5h3.562l1.189-4.757L37 37h-2zM39 47h6v-2h-4v-2h4v-2h-4v-2h4v-2h-6zM27 37h2v10h-2zM7 58.766 14.943 54 7 49.234zm2-6L11.057 54 9 55.234z"
+                  fill="#C0C0C0"
+                />
+                <path
+                  d="M61 49.184V5H42.932C39.974 2.508 36.162 1 32 1s-7.974 1.508-10.932 4H3v43.356A8.953 8.953 0 0 0 1 54c0 4.962 4.037 9 9 9h50c1.654 0 3-1.346 3-3v-8a2.996 2.996 0 0 0-2-2.816zM59 49h-2V9H46.396a16.988 16.988 0 0 0-1.458-2H59zm-49-4c-.338 0-.671.022-1 .059V11h7.526A16.878 16.878 0 0 0 15 18c0 9.374 7.626 17 17 17s17-7.626 17-17c0-2.497-.555-4.862-1.526-7H55v38H17.478A8.995 8.995 0 0 0 10 45zm12.382-31.339L25 15.517v4.966l-2.618 1.856-5.274-2.608C17.042 19.162 17 18.586 17 18s.042-1.162.108-1.731zm-.949 10.44-.273 4.238a14.99 14.99 0 0 1-3.547-6.127zm2.008-.061 2.576-1.826L31 25.535v2.93l-4.948 3.299a15 15 0 0 1-2.996-1.75zM32 12.202l5 3.333v4.93l-5 3.333-5-3.333v-4.93zm0 18 3.539 2.359C34.402 32.837 33.221 33 32 33s-2.402-.163-3.539-.439zm5.948 1.562L33 28.465v-2.93l4.983-3.322 2.576 1.826.385 5.974a14.956 14.956 0 0 1-2.996 1.751zm3.67-18.103 5.274 2.608c.066.569.108 1.145.108 1.731s-.042 1.162-.108 1.731l-5.274 2.608L39 20.483v-4.966zm1.223 14.678-.273-4.238 3.82-1.889a15.002 15.002 0 0 1-3.547 6.127zm-.274-16.44.273-4.238a14.99 14.99 0 0 1 3.547 6.127zm-2.008.061-2.576 1.826L33 10.465v-2.93l4.948-3.299a15 15 0 0 1 2.996 1.75zM31 10.465l-4.983 3.322-2.576-1.826-.385-5.974a14.904 14.904 0 0 1 2.996-1.75L31 7.535zm-9.567 1.434-3.82 1.889a14.99 14.99 0 0 1 3.547-6.127zm14.106-8.46L32 5.798l-3.539-2.359C29.598 3.163 30.779 3 32 3s2.402.163 3.539.439zM19.062 7a17.102 17.102 0 0 0-1.458 2H7v36.525a8.92 8.92 0 0 0-2 .997V7zM3 54c0-3.86 3.141-7 7-7s7 3.14 7 7-3.141 7-7 7-7-3.14-7-7zm58 6c0 .551-.448 1-1 1H15.644A8.983 8.983 0 0 0 19 54c0-1.053-.191-2.06-.525-3H60c.552 0 1 .449 1 1z"
+                  fill="#C0C0C0"
+                />
+                <path
+                  d="M32 53a2.996 2.996 0 0 0-2.816 2H21v2h8.184c.414 1.161 1.514 2 2.816 2s2.402-.839 2.816-2H59v-2H34.816A2.996 2.996 0 0 0 32 53zm0 4a1.001 1.001 0 0 1 0-2 1.001 1.001 0 0 1 0 2z"
+                  fill="#C0C0C0"
+                />
+              </g>
+            </svg>
+
+            <h3>Live Sports</h3>
+            <p>
+              Watch live matches and highlights. Plus, responsibly place bets on
+              major games—all inside the app.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="UV-index_testimonials">
+        <h2>Trusted By Elite Members</h2>
+
+        <div class="testimonialsSection">
+          <div>
+            <img alt="img" src="img/headShot2.jpg" />
+
+            <ul>
+              <li>
+                <i>
+                  "In my line of work, time’s money, no stress. UniqVerse helps
+                  me live smarter, not guess. I book, I buy, I stream with ease—
+                  Luxury on tap, just the way I please."
+                </i>
+              </li>
+              <li>James Adebayo</li>
+              <li>Digital Marketer - <b>Lagos</b></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="testimonialsSection">
+          <div>
+            <img alt="img" src="img/headShot3.jpg" />
+
+            <ul>
+              <li>
+                <i>
+                  "I travel the globe and seek the best— UniqVerse outshined the
+                  rest. Food, glam, and shows on one sleek screen— Luxury living
+                  made smooth and clean."
+                </i>
+              </li>
+              <li>Sarah Müller</li>
+              <li>Travel Blogger - <b>Berlin</b></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="testimonialsSection">
+          <div>
+            <img alt="img" src="img/headshot5.jpg" />
+
+            <ul>
+              <li>
+                <i>
+                  "When homework’s done, I watch the game, On UniqVerse, it’s
+                  never the same. I dream of goals and winning too— And UV shows
+                  me what stars can do!"
+                </i>
+              </li>
+              <li>Daniel Ighodalo</li>
+              <li>Student & Future Footballer - <b>Benin City</b></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="testimonialsSection">
+          <div>
+            <img alt="img" src="img/headShot4.jpg" />
+
+            <ul>
+              <li>
+                <i>
+                  "Style and beauty is my world and vibe, UniqVerse lets my
+                  lifestyle thrive. From booking clients to self-care time— It’s
+                  all in one, and that’s just fine."
+                </i>
+              </li>
+              <li>Alexander Morven</li>
+              <li>Beauty Therapist - <b>Scotland</b></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="testimonialsSection">
+          <div>
+            <img alt="img" src="img/headShot1.jpg" />
+
+            <ul>
+              <li>
+                <i>
+                  "UniqVerse, clean design, smooth flow—it had me at 'Hello.' As
+                  a designer, I notice detail and pace. UniqVerse blends it all
+                  with elegance and grace."
+                </i>
+              </li>
+              <li>Daniel Thompson</li>
+              <li>UX Designer - <b>London</b></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      let index = 0;
+      const totalSlides = 5;
+
+      setInterval(() => {
+        index = (index + 1) % totalSlides;
+        document.querySelector(".offersSection").style.transform =
+          `translateX(-${index * 100}%)`;
+      }, 3000);
+    </script>
+  </body>
 </html>
