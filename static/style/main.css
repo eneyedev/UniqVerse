@@ -95,7 +95,7 @@ body {
   gap: 3rem;
 }
 
-.UV-index_header_navBar_menu img {
+.UV-index_header_navBar .UV-index_header_navBar_menu img {
   width: 100%;
   max-width: 100px;
   display: flex;
@@ -123,10 +123,33 @@ body {
   display: block;
 }
 
+.UV-index_header_navBar_menu div:first-child {
+  position: relative;
+}
+
+.UV-index_header_navBar_menu div:first-child span {
+  position: absolute;
+  top: -4.5rem;
+  right: -5.2rem;
+}
+
 .UV-index_header_navBar:hover .UV-index_header_navBar_menu {
   display: flex;
   flex-direction: column;
   animation: slide-in-blurred-top 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+.UV-index_header_navBar .hamburger {
+  /*width: fit-content;*/
+}
+
+.UV-index_header_navBar:hover .hamburger {
+  /*display: none;*/
+  opacity: 0;
+}
+
+.UV-index_header_navBar:hover .hamburger:hover .hamburger {
+  display: block;
 }
 
 .UV-index_header_navBar_menu ul {
@@ -548,7 +571,166 @@ body {
   color: var(--white);
 }
 
-@keyframes slide-in-blurred-top {
+/*****SIGN UP*****/
+.UV-signUp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  place-content: center;
+  height: 100vh;
+}
+
+.UV-signUp .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  place-content: center;
+}
+
+.UV-signUp header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.UV-signUp header span img {
+  width: 55px;
+  margin-right: -1rem; !important;
+}
+
+.UV-signUp header h3 {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.UV-signUp header h3 span:first-child {
+  color: var(--gold);
+  font-family: "Arial", sans-serif;
+}
+
+.UV-signUp header h3 span:last-child {
+  color: var(--silver);
+  font-family: "Comic Sans MS", sans-serif;
+}
+
+.UV-signUp .intro {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.UV-signUp .intro h4 {
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+
+.UV-signUp .intro p {
+  color: var(--white);
+}
+
+.UV-signUp form {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.UV-signUp form label input {
+  padding: 0.7rem;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: var(--bg-dark);
+  border-radius: 0.5rem;
+}
+
+.UV-signUp form label:nth-child(2) input {
+  padding: 0.7rem;
+  background: var(--purple);
+  color: var(--white);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 13px;
+  border-radius: 0.5rem;
+}
+
+.UV-signUp form label:nth-child(2) input:hover {
+  background: var(--gold);
+  color: var(--white);
+  font-weight: 500;
+}
+
+.UV-signUp form label:nth-child(3) {
+  text-align: center;
+}
+
+.UV-signUp form label:nth-child(3) span {
+  color: var(--gold);
+  font-size: 14px;
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.UV-signUp form label:nth-child(3) span:before {
+  content: "";
+  background: var(--silver);
+  padding: 0.1rem;
+  width: 100%;
+  transform: scaleY(0.3);
+}
+
+.UV-signUp form label:nth-child(3) span:after {
+  content: "";
+  background: var(--silver);
+  padding: 0.1rem;
+  width: 100%;
+  transform: scaleY(0.3);
+}
+
+.UV-signUp form label:nth-child(4) a:first-child,
+.UV-signUp form label:nth-child(5) a:first-child {
+  padding: 0.7rem;
+  background: var(--white);
+  color: var(--bg-dark);
+  text-align: center;
+  width: 100%;
+  display: flex;
+  font-size: 13px;
+  justify-content: center;
+  gap: 0.5rem;
+  align-items: center;
+  font-weight: 500;
+  border-radius: 0.5rem;
+}
+
+.UV-signUp form label a:first-child:hover {
+  background: var(--gold);
+  color: var(--white);
+  font-weight: 500;
+}
+
+.UV-signUp .wrapper div:last-child p {
+  color: var(--silver);
+  display: block;
+  gap: 4px;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.UV-signUp .wrapper div:last-child p a {
+  color: var(--gold);
+}
+
+/***KEY FRAMES***/
+. @keyframes slide-in-blurred-top {
   0% {
     transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
     transform-origin: 50% 0;
@@ -666,6 +848,10 @@ body {
     flex-direction: column;
     gap: 1.5rem;
     text-align: left;
+  }
+
+  .sidebar ul:last-child {
+    margin-bottom: 2rem;
   }
 
   .sidebar ul li {
