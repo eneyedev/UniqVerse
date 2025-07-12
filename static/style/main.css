@@ -647,7 +647,8 @@ body {
   border-radius: 0.5rem;
 }
 
-.UV-signUp form label:nth-child(2) input {
+/*.UV-signUp form label:nth-child(2) input, */
+.UV-signUp form label:nth-child(2) a {
   padding: 0.7rem;
   background: var(--purple);
   color: var(--white);
@@ -660,7 +661,8 @@ body {
   border-radius: 0.5rem;
 }
 
-.UV-signUp form label:nth-child(2) input:hover {
+/*.UV-signUp form label:nth-child(2) input:hover, */
+.UV-signUp form label:nth-child(2) a:hover {
   background: var(--gold);
   color: var(--white);
   font-weight: 500;
