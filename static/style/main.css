@@ -30,6 +30,23 @@ body {
   margin: auto;
 }
 
+.greetings {
+  color: var(--white);
+  background-color: rgba(16, 24, 39, 0.8);
+  font-size: 30px;
+  text-align: center;
+  margin-top: 0;
+  font-family: "Arial", sans-serif;
+  width: 100%;
+  /*max-width: 50%;*/
+  padding: 0.5rem;
+}
+
+.greetings span {
+  color: var(--gold);
+  font-family: "Comic Sans MS", sans-serif;
+}
+
 .sidebar,
 .sidebar-Right {
   display: none;
@@ -83,16 +100,37 @@ body {
   width: fit-content;
 }
 
+/*.UV-index_header_navBar_menu {*/
+/*  position: absolute;*/
+/*  background: var(--fake-blue);*/
+/*  padding: 1.5rem;*/
+/*  gap: 3rem;*/
+
+/*  display: none;*/
+/*  opacity: 0;*/
+/*  !*transform: translateX(100%);*!*/
+/*  transition: all 0.3s ease;*/
+/*  top: 3.7rem;*/
+/*  right: 5rem;*/
+
+/*  left: 0;*/
+/*  height: 100vh;*/
+/*  width: 80%;*/
+/*  background: var(--fake-blue);*/
+/*  z-index: 999;*/
+
+/*}*/
 .UV-index_header_navBar_menu {
   display: none;
-  position: absolute;
-  background: var(--fake-blue);
-  padding: 1.5rem;
+  position: fixed;
+  top: 60px;
   left: 0;
-  right: 5rem;
-  top: 3.7rem;
-  height: 100vh;
-  gap: 3rem;
+  width: 100%;
+  background: #000;
+  color: white;
+  z-index: 999;
+  flex-direction: column;
+  padding: 2rem;
 }
 
 .UV-index_header_navBar .UV-index_header_navBar_menu img {
@@ -133,24 +171,70 @@ body {
   right: -5.2rem;
 }
 
-.UV-index_header_navBar:hover .UV-index_header_navBar_menu {
+/*.UV-index_header_navBar_menu.active {*/
+/*  display: block;*/
+/*  opacity: 1;*/
+/*  pointer-events: auto;*/
+/*  transform: translateX(0%);*/
+/*}*/
+/*/*.UV-index_header_navBar:hover .UV-index_header_navBar_menu {*/
+/*.UV-index_header_navBar .UV-index_header_navBar_menu.active {*/
+/*  display: flex;!important;*/
+/*  flex-direction: column;*/
+/*  animation: slide-in-blurred-top 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;*/
+/*}*/
+
+.UV-index_header_navBar_menu.active {
   display: flex;
+}
+
+.hamburger {
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.hamburger.hidden {
+  display: none;
+}
+
+.UV-index_header_navBar_menu {
+  display: none;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: #000;
+  color: white;
+  z-index: 999;
   flex-direction: column;
-  animation: slide-in-blurred-top 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
+  padding: 2rem;
 }
 
-.UV-index_header_navBar .hamburger {
-  /*width: fit-content;*/
+.UV-index_header_navBar_menu.active {
+  display: flex;
 }
 
-.UV-index_header_navBar:hover .hamburger {
-  /*display: none;*/
-  opacity: 0;
+.hamburger {
+  z-index: 1000;
+  cursor: pointer;
 }
 
-.UV-index_header_navBar:hover .hamburger:hover .hamburger {
-  display: block;
+.hamburger.hidden {
+  display: none;
 }
+
+/*.hamburger.hide {*/
+/*  display: none;*/
+/*}*/
+
+/*.UV-index_header_navBar:hover .hamburger {*/
+/*  display: none;*/
+/*  !*opacity: 0;*!*/
+/*}*/
+
+/*.UV-index_header_navBar:hover .hamburger:hover .hamburger {*/
+/*  display: block;*/
+/*}*/
 
 .UV-index_header_navBar_menu ul {
   display: flex;
@@ -176,12 +260,14 @@ body {
   gap: 1rem;
 }
 
-.header_btn button {
+.header_btn a {
   display: block;
+  text-align: center;
 }
 
-.header_btn button:first-child {
+.header_btn a:first-child {
   background: transparent;
+  display: block;
   border: 1px solid var(--purple);
   color: var(--white);
   outline: none;
@@ -189,11 +275,12 @@ body {
   border-radius: 0.5rem;
 }
 
-.header_btn button:first-child:hover {
+.header_btn a:first-child:hover {
   background: var(--purple);
 }
 
-.header_btn button:last-child {
+.header_btn a:nth-child(2) {
+  display: block;
   background: var(--white);
   color: var(--purple);
   padding: 1rem;
@@ -202,7 +289,7 @@ body {
   border-radius: 0.5rem;
 }
 
-.header_btn button:last-child:hover {
+.header_btn a:last-child:hover {
   background: var(--purple);
   color: var(--white);
 }
@@ -724,7 +811,7 @@ body {
   display: block;
   gap: 4px;
   text-align: center;
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 
 .UV-signUp .wrapper div:last-child p a {
@@ -756,7 +843,14 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  .lg\:grid-cols-4 {
+    display: flex;
+  }
+}
+
 @media screen and (min-width: 920px) {
+
   .UV-index_intro .left ul {
     display: flex;
     align-items: baseline;
